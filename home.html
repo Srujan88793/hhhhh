@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>KSSEM portfolio</title>
+    <style>
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: aqua;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #007bff;
+            padding: 10px 20px;
+        }
+
+        .logo img {
+            width: 50px;
+            height: auto;
+        }
+
+        .name {
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-left: 50px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .nav-links li a:hover {
+            color: black;
+            transition: color 0.3s ease;
+        }
+
+        .carousel {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: cover;
+        }
+
+        .carousel-indicators li {
+            background-color: #555;
+            border-radius: 50%;
+            width: 12px;
+            height: 12px;
+        }
+
+        .carousel-indicators .active {
+            background-color: #007bff;
+        }
+
+        .carousel-control-prev-icon, 
+        .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            width: 30px;
+            height: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: #007bff;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-links {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            margin-bottom: 15px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .social-icons img {
+            height: 40px;
+            width: 40px;
+        }
+
+        
+        @media (max-width: 1200px) {
+            .name {
+                margin-left: 100px;
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .name {
+                margin-left: 50px;
+                font-size: 18px;
+            }
+            .nav-links li {
+                margin-left: 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .name {
+                margin-left: 0;
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-links li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .carousel-inner img {
+                max-height: 300px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .footer-links a {
+                font-size: 16px;
+            }
+
+            .social-icons img {
+                height: 30px;
+                width: 30px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo3434.jpeg" alt="Logo">
+        </div>
+        <div class="name">KSSEM</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Log out</a></li>
+           
+        </ul>
+    </nav><br>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="https://kssem.edu.in/img/new_slider/slide2.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://kssem.edu.in/img/new_slider/slide8.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://kssem.edu.in/img/new_slider/in1.jpg" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <h1>Welcome to KSSEM</h1>
+    <p>The Kammavari Sangham, a multi-activity non-profit oriented voluntary service organization, was established in the year 1952 with the sole objective of providing charitable service to community and society. The Sangham has diversified its activities since its establishment over five decades ago.
+       With a firm belief that quality and meaningful education only can lay the strong foundation for bringing about economic and social changes to the lives of thousand, the Sangham went about establishing educational institutions, starting with K.S. Polytechnic in 1992.
+       Enthused with this success of its foray into technical education, the Sangham moved forward by starting the K.S School of Engineering and Management (KSSEM) in the year 2010.
+       The campus of K S School of Engineering and Management, nestled in a quiet location off the Kanakapura Main Road, provides good facilities that are required for quality technical education.
+       KSSEM's strength lies in its good vision; dedicated, experienced and well qualified teaching staff; the establishment with recent equipment in the laboratories and the interactive relationship that it has forged with the industry; all with the active support of an eminent Management. KSSEM is offering six Under Graduate courses namely Civil Engineering, Computer Science and Engineering, Electronics and Communication Engineering, Artificial Intelligence and Data Science, Computer Science & Business System and Mechanical Engineering. It is also offering M Tech course in Structural Engineering and Masters in Business Administration</p>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                
+                <h6>Contact US</h6>
+                <a aria-label="Chat on WhatsApp" href="https://wa.me/9945140818"> <img alt="Chat on WhatsApp" src="whatsapp.svg"  height="45" width="45"/>
+                </a>
+                <h6>Reach us Via</h6>
+                
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDy_BNkPSR9l2X5I074rtb6j-z-i2Iz2yblw&s" alt="Facebook" height="50" width="50">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwH--J-ZMUg8puNfUxE6YXQi3yVHuAORDxow&s" alt="Instagram" height="50" width="50">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png" alt="LinkedIn" height="50" width="50">
+                </a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            &copy; 2024 KSSEM. All rights reserved. Designed and developed by KSSEM ECE.
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
